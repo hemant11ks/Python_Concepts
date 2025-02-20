@@ -1,0 +1,34 @@
+Regular Expression Syntax:
+
+basic concepts you need to know to use regular expressions:
+
+Pattern: A regular expression pattern is a string that describes what you want to search for.
+Matcher: A matcher is an object that performs operations on a string based on a regular expression pattern.
+Groups: Groups are parts of a pattern that can be captured and used later.
+
+--------------------------------------------------------------------------------
+
+Here are some common regular expression syntax elements:
+
+.: Matches any single character.
+^: Matches the start of a string.
+$: Matches the end of a string.
+*: Matches 0 or more occurrences of the preceding element.
++: Matches 1 or more occurrences of the preceding element.
+?: Matches 0 or 1 occurrence of the preceding element.
+{n}: Matches exactly n occurrences of the preceding element.
+{n,}: Matches n or more occurrences of the preceding element.
+{n,m}: Matches at least n and at most m occurrences of the preceding element.
+[abc]: Matches any character in the set (in this case, 'a', 'b', or 'c').
+[^abc]: Matches any character not in the set (in this case, not 'a', 'b', or 'c').
+\: Escapes special characters (e.g., \. matches a period).
+
+-----------------------------------------------------------------------------------
+
+Here are some common functions:
+
+re.search(pattern, string): Searches for the first occurrence of the pattern in the string.
+re.match(pattern, string): Searches for the pattern at the beginning of the string.
+re.fullmatch(pattern, string): Searches for the pattern that matches the entire string.
+re.findall(pattern, string): Returns all non-overlapping matches of the pattern in the string as a list of strings.
+re.sub(pattern, repl, string): Replaces occurrences of the pattern in the string with the replacement repl.
