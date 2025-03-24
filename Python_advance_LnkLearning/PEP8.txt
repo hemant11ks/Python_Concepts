@@ -1,0 +1,55 @@
+PEP 8 - Python Style Guide (Theory)
+PEP 8 (Python Enhancement Proposal 8) is the official style guide for Python code. It was created by Guido van Rossum, Barry Warsaw, and Nick Coghlan to maintain consistency and improve readability in Python projects.
+
+Python’s philosophy emphasizes readability and simplicity (as seen in The Zen of Python, import this). PEP 8 extends this philosophy by providing rules and best practices for writing clean and consistent Python code.
+
+1. Purpose of PEP 8
+Ensures uniformity in coding style across different Python projects.
+Makes code easier to read, review, and maintain.
+Reduces errors by following structured formatting.
+Helps in collaborative development, ensuring that all developers follow a common style.
+2. Fundamental Principles of PEP 8
+PEP 8 defines guidelines for writing Python code in an organized and readable way. These guidelines include indentation, spacing, naming conventions, imports, comments, and best practices.
+
+Let's explore each of these principles in detail:
+
+1️⃣ Indentation
+Python relies on indentation instead of {} (like in C, Java).
+Use 4 spaces per indentation level (instead of tabs).
+Consistent indentation improves readability and prevents errors.
+2️⃣ Maximum Line Length
+PEP 8 recommends a maximum of 79 characters per line for code.
+For docstrings/comments, the limit is 72 characters.
+Long lines can be broken using parentheses or backslashes.
+3️⃣ Whitespace Usage
+Use spaces around operators (=, +, -, *, etc.).
+Do not add unnecessary spaces inside parentheses, brackets, or braces.
+Use one blank line inside functions to separate logical sections.
+4️⃣ Naming Conventions
+Variables & Functions → snake_case (e.g., my_variable, calculate_sum()).
+Class Names → PascalCase (e.g., MyClass, StudentRecord).
+Constants → UPPER_CASE (e.g., PI = 3.14).
+Private Methods/Variables → Prefix with an underscore _private_var.
+5️⃣ Import Statements
+Keep all imports at the top of the file.
+Follow the order:
+Standard Library Imports (import os, sys).
+Third-party Library Imports (import requests).
+Local Module Imports (from mymodule import my_function).
+6️⃣ Comments & Docstrings
+Use # for single-line comments explaining tricky parts of the code.
+Multi-line comments are written using triple quotes """ """.
+Docstrings should be used for functions, classes, and modules.
+7️⃣ Exception Handling
+Use specific exceptions rather than a general except: clause.
+Helps in better debugging and error tracking.
+8️⃣ Readability & Consistency
+Readability is the primary goal.
+Following PEP 8 ensures consistency in codebases, making it easier to maintain.
+3. Why PEP 8 is Important?
+✅ Readability → Clean and readable code is easier to understand.
+✅ Consistency → Helps teams maintain a standard format.
+✅ Collaboration → When multiple developers work on a project, PEP 8 ensures uniform style.
+✅ Industry Standard → Most Python projects and libraries follow PEP 8.
+
+"Code is read much more often than it is written." — Guido van Rossum
